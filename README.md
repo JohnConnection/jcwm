@@ -58,30 +58,37 @@ SHIFT+LMB (on BG) - Bring up launcher (**NOTE: THIS IS gmrun BY DEFAULT. TO CHAN
 CTRL+LMB (on BG) - Exit WM
 
 **NOTE:** If you use a mouse with two buttons, you will have to change the source code to use some other ModKey+MB Combo for those actions, then recompile
+
 **NOTE 2:** These actions only work if you do them on the frame of the window (titlebar + border)
 
 **_Setup_**
 
 Debian:
+
   sudo apt install libx11-dev
+  
   sudo apt install libxcursor-dev
+  
   sudo apt install libxrandr-dev
+  
 **If you're using any other distros, just figure out what your equivalent package would be for these three and install that.**
 
 To install:
+
   git clone https://github.com/JohnConnection/jcwm
+  
   cd jcwm
+  
   sudo make install
 
 To use: 
+
   Add jcwm to your .Xsession file located in your home folder
 
 **_Config_**
 
 At this moment, the WM is configured by changing the source code, mainly the Macros in the main.c file. If you want to go further, you may dig into the source code
 itself to change the WM's behaviour. Macros mainly affect Design.
-
-**NOTE: **
 
 **_TO-DO_**
 
