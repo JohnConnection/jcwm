@@ -8,6 +8,7 @@ _Current Version: 1.2_04_
 **FOR FEATURE REQUESTS, BUGS, HELP**
 
 cabron__ on Discord
+
 johnconnection@keemail.me
 
 **_What is JCWM?_**
@@ -29,12 +30,14 @@ usasble. For this attempt I heavily looked towards dwm as a way to understand ho
 by dwm, from a code standpoint. 
 
 **_What can it do?_**
+
 The Window goes into a Window Manager that manages the window into a managed window. It draws a border around the window and leaves a little space at the top to 
 draw the window's title. Additionally, JCWM comes with jcbar, a very, **VERY**, rudimentary bar, primarily designed to tell the time, and be able to unminimize minimized
 windows. **NOTE:** jcbar was hacked together in a day, so it's not a good bar by any means, but just like the WM, it's going to get better.
 
 
 **_Controls_**
+
 No matter how hard I tried, I always failed at implementing keybinds. Either they'd only work for some Windows, or not at all. For the sake
 of my own sanity, I decided to go with a purely Modifier-plus-Mouse-button approach.
 
@@ -69,12 +72,14 @@ To use:
   Add jcwm to your .Xsession file located in your home folder
 
 **_Config_**
+
 At this moment, the WM is configured by changing the source code, mainly the Macros in the main.c file. If you want to go further, you may dig into the source code
 itself to change the WM's behaviour. Macros mainly affect Design.
 
 **NOTE: **
 
 **_TO-DO_**
+
 + Add Snapping to screen edge
 + Improve Multimonitor support
 + Rewrite jcbar
