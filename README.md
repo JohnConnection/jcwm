@@ -42,14 +42,19 @@ No matter how hard I tried, I always failed at implementing keybinds. Either the
 of my own sanity, I decided to go with a purely Modifier-plus-Mouse-button approach.
 
 ALT+LMB - Move Window
+
 ALT+MMB - Minimize Window
+
 ALT+RMB - Resize Window
 
 CTRL+LMB - Close Window
+
 CTRL+MMB - Maximize Window
+
 CTRL+RMB - Fullscreen Window
 
 SHIFT+LMB (on BG) - Bring up launcher (**NOTE: THIS IS gmrun BY DEFAULT. TO CHANGE, CHANGE IT IN commons.h AND RECOMPILE**)
+
 CTRL+LMB (on BG) - Exit WM
 
 **NOTE:** If you use a mouse with two buttons, you will have to change the source code to use some other ModKey+MB Combo for those actions, then recompile
