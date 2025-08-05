@@ -1,0 +1,1 @@
+Xephyr -br -ac -noreset -screen 1200x1024 :1 &
