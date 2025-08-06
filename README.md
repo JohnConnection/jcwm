@@ -59,6 +59,8 @@ Debian:
   sudo apt install libxcursor-dev
   
   sudo apt install libxrandr-dev
+
+  sudo apt install alttab
   
 **If you're using any other distros, just figure out what your equivalent package would be for these three and install that.**
 
