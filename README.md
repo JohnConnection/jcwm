@@ -1,8 +1,18 @@
 **JCWM - John Connection Window Manager**
 
 _Current Stage: Alpha_
-_Current Version: 1.2_05_
+_Current Version: 1.3_
 
+
+**_What's new?_**
+  
+    - Added Snap. If the Windows x or y coordinates are below a certain value, the windows get snapped to
+      the screen's edge. Said value can be changed in main.c by modifying the SNAP_MIN macro. Alternatively,
+      users may disable Snap totally by removing/uncommenting the macro DO_SNAP
+
+    - Added Window Scanning. Upon startup, the WM scans for windows that were there before, and manages them.
+
+    
 **_CONTACT ME:_**
 
 **FOR FEATURE REQUESTS, BUGS, HELP**

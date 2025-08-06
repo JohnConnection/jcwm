@@ -51,8 +51,12 @@ NOTE: Please configure the WM via the few Macros below.
 #define FRAME_BORDER_COLOR 0x808080
 #define FRAME_INACTIVE_BORDER_COLOR 0xC0C0C0
 #define FRAME_BACKGROUND_COLOR 0xFFFFFF
+#define SNAP_MIN 32
 
-#define VERSION "JCWM - Alpha 1.2_05"
+//if you dont want window snapping, comment out the macro below
+#define DO_SNAP
+
+#define VERSION "JCWM - Alpha 1.3"
 
 #define FRAME_WIDTH_INC 10
 #define MIN_SIZE 32
@@ -154,6 +158,29 @@ void wmnormalhints(Client *c);
 void draw_watermark();
 void grabkeys();
 void ungrabkeys();
+void scan();
+
+void scan()
+{
+    Window* children;
+    int nchildren;
+    XWindowAttributes xwa;
+    Window root_return;
+    Window parent_return;
+
+    XQueryTree(display, root, &root_return, &parent_return, &children, &nchildren);
+    for(int i = 0; i < nchildren; i++)
+    {
+        XGetWindowAttributes(display, children[i], &xwa);
+        if(xwa.override_redirect)
+            continue;
+        #ifdef DEBUG
+            printf("Found window with window id %lu\n", children[i]);
+        #endif
+        manage(children[i]);
+    }
+    XFree(children);
+}
 
 
 void wmnormalhints(Client* c)
@@ -451,6 +478,10 @@ void movemouse(Client* c)
             nx = ox + (ev.xmotion.x - x); ny = oy + (ev.xmotion.y - y);
             if(nx < 0) nx = 0;
             if(ny < 0) ny = 0;
+            #ifdef DO_SNAP
+                if(nx < SNAP_MIN) nx = 0;
+                if(ny < SNAP_MIN) ny = wm_y;
+            #endif
                 XMoveWindow(display, c->frame, nx + c->mon->wx, ny+ c->mon->wy); c->x = nx; c->y = ny;
             
             }
@@ -907,6 +938,7 @@ init(void)
     draw_watermark();
     XUngrabButton(display, AnyButton, AnyModifier, root);
     wm_y = 0 + PANEL_HEIGHT;
+    scan();
 }   
 
 void destroynotify(XEvent* e)
