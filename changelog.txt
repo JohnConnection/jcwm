@@ -6,6 +6,7 @@ Thought I'd add this to keep track of changes
       users may disable Snap totally by removing/uncommenting the macro DO_SNAP
 
     - Added Window Scanning. Upon startup, the WM scans for windows that were there before, and manages them.
+    
 + Alpha 1.3_01
     - Fixed alttab showing bogus windows by creating alttab.sh which contains the correct params so that alttab
       behaves as any appswitcher should.
