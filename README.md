@@ -13,17 +13,6 @@ _Current Version: 1.2_04_
 
 **_What is JCWM?_**
 
-  JCWM stands for "John Connection Window Manager". It's the result of countless attempts at 
-  writing a window manager. I have no idea WHY, but in early 2024, the thought of writing a Window Manager
-  piqued my interest, so over the course of about a year, I tried writing a window manager. In the process,
-  I was learning about X11/Xlib. I think I tried writing a wm about 10-15 times or so, but it was
-  always plagued by various issues, and they fell apart rather quickly due to a poor design, esp. code wise.
-  I thought I'd try again earlier this year, and JCWM is the result. Its' code is partly based on/inspired by dwm, because its
-  one-source-file-approach made it easy for me to understand how it's supposed to be done. As a result, this WM did not fall apart like
-  a house of cards after two days. It has gotten to the stage where I am ready to release it in Alpha. 
-  There are still things I'd like to add, but at this point I think it's pretty usable. If you have any 
-  questions/bug reports/feature requests/
-  please do not hesitate to message me.
   JCWM (short for John Connection Window Manager), is a minimal window manager written in Xlib and C. It is the result of countless attempts at
   writing a window manager. First attempts were very janky and fell apart relatively early. Therefore I am proud to announce that this WM is atleast somewhat
   usasble. For this attempt I heavily looked towards dwm as a way to understand how things are supposed to be done. So it is partly based on and heavily inspired
