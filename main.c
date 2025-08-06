@@ -45,7 +45,7 @@ NOTE: Please configure the WM via the few Macros below.
 #include "commons.h"
 
 //Uncomment this if you want to be able to read the one or two DEBUG messages in the code
-//#define DEBUG
+#define DEBUG
 #define FRAME_HEIGHT 20
 #define FRAME_BORDER_WIDTH 3
 #define FRAME_BORDER_COLOR 0x808080
@@ -56,7 +56,7 @@ NOTE: Please configure the WM via the few Macros below.
 //if you dont want window snapping, comment out the macro below
 #define DO_SNAP
 
-#define VERSION "JCWM - Alpha 1.3"
+#define VERSION "JCWM - Alpha 1.3_01"
 
 #define FRAME_WIDTH_INC 10
 #define MIN_SIZE 32
@@ -1044,7 +1044,7 @@ main(int argc, char** argv)
     signal(SIGCHLD, SIG_IGN);
     init();
     launch("jcbar");
-    launch("alttab");
+    launch("jcat");
     run();
     XCloseDisplay(display);
     return 0;

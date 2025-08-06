@@ -82,6 +82,7 @@ To install:
   
   sudo make install
 
+
 To use: 
 
   Add jcwm to your .Xsession file located in your home folder

@@ -90,6 +90,7 @@ void draw() {
             for (unsigned long i = 0; i < nitems; i++) {
                 if(!show(wins[i])) continue;
                 char *name = window_name(wins[i]);
+                if(strlen(name) > 32) name[32] = '\0';
                 if (name) {
                     XDrawString(display, panel, gc, x, 16, name, strlen(name));
                     x += strlen(name) * 8 + 20;

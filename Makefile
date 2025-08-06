@@ -9,6 +9,7 @@
 #
 TARGET = jcwm
 TARGET2 = jcbar
+TARGET3 = jcat
 SRC = main.c
 SRC2 = jcbar.c
 CC = gcc
@@ -25,7 +26,10 @@ install: $(TARGET)
 	sudo chmod +x /usr/local/bin/$(TARGET)
 	sudo mv $(TARGET2) /usr/local/bin/
 	sudo chmod +x /usr/local/bin/$(TARGET2)
+	sudo cp $(TARGET3) /usr/local/bin/
+	sudo chmod +x /usr/local/bin/$(TARGET3)
 clean:
 	rm -f $(TARGET)
 	rm -f $(TARGET2)
+	rm -f $(TARGET3)
 .PHONY: all install clean
