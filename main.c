@@ -1012,6 +1012,7 @@ main(int argc, char** argv)
     signal(SIGCHLD, SIG_IGN);
     init();
     launch("jcbar");
+    launch("alttab");
     run();
     XCloseDisplay(display);
     return 0;
