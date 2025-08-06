@@ -99,10 +99,10 @@ To use:
 
 **_TO-DO_**
 
-  + Add Snapping to screen edge
+  + ~~Add Snapping to screen edge~~
   + Improve Multimonitor support
   + Rewrite jcbar
-  + Add Alt+Tab
+  + ~~Add Alt+Tab~~
   + Fix window size issues (XTerm, Firefox, e.g)
   + Improve handling of transient windows
   + Add multiple Desktops
