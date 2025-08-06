@@ -1,7 +1,7 @@
 **JCWM - John Connection Window Manager**
 
 _Current Stage: Alpha_
-_Current Version: 1.2_04_
+_Current Version: 1.2_05_
 
 **_CONTACT ME:_**
 

@@ -52,7 +52,7 @@ NOTE: Please configure the WM via the few Macros below.
 #define FRAME_INACTIVE_BORDER_COLOR 0xC0C0C0
 #define FRAME_BACKGROUND_COLOR 0xFFFFFF
 
-#define VERSION "JCWM - Alpha 1.2_04"
+#define VERSION "JCWM - Alpha 1.2_05"
 
 #define FRAME_WIDTH_INC 10
 #define MIN_SIZE 32
