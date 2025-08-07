@@ -1,5 +1,7 @@
 **JCWM - John Connection Window Manager**
 
+JCWM is licensed under the GPL 3.0 License. For further information, consult COPYING
+
 _Current Stage: Alpha_
 _Current Version: 1.3_01_
 
