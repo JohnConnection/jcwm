@@ -3,7 +3,7 @@
 JCWM is licensed under the GPL 3.0 License. For further information, consult COPYING
 
 _Current Stage: Alpha_
-_Current Version: 1.3_01_
+_Current Version: 1.3_02_
 
 
 **_What's new?_**
@@ -17,6 +17,9 @@ _Current Version: 1.3_01_
 
     Alpha 1.3_01
     - Fixed a minor bug related to the usage of alttab. Check changelog.txt for more.
+
+    Alpha 1.3_02
+    - Fixed a bug where you could move/resize a window while it was maximized. No need to check changelog.txt because that is all
     
 
     

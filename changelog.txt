@@ -10,3 +10,6 @@ Thought I'd add this to keep track of changes
 + Alpha 1.3_01
     - Fixed alttab showing bogus windows by creating a shell file called jcat which contains the correct params so that alttab
       behaves as any appswitcher should.
+
++ Alpha 1.3_02
+    - Fixed a bug where you could move/resize a window while it was maximized

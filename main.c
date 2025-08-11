@@ -56,7 +56,7 @@ NOTE: Please configure the WM via the few Macros below.
 //if you dont want window snapping, comment out the macro below
 #define DO_SNAP
 
-#define VERSION "JCWM - Alpha 1.3_01"
+#define VERSION "JCWM - Alpha 1.3_02"
 
 #define FRAME_WIDTH_INC 10
 #define MIN_SIZE 32
@@ -407,7 +407,7 @@ int errorhandler(Display* display, XErrorEvent *error) {
 
 void resizemouse(Client* c)
 {
-    if(!c || !c->frame || c->fullscreen) return;
+    if(!c || !c->frame || c->fullscreen || c->maximized) return;
     int x, y, ox, oy, ow, oh, nw, nh;
     XEvent ev; 
     ox = c->x; oy = c->y; ow = c->w; oh = c->h; nh = oh; nw = ow; XDefineCursor(display, c->frame, res);
@@ -461,7 +461,7 @@ void resizemouse(Client* c)
 
 void movemouse(Client* c)
 {
-    if(!c->win || !c->frame || c->fullscreen)
+    if(!c->win || !c->frame || c->fullscreen || c->maximized)
         return;
     int x, y, ox, oy, nx, ny, nw, nhm, origx, origy, origw, origh, minw, minh, maxw, maxh;
     XEvent ev; 
